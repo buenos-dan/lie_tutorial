@@ -1,0 +1,6 @@
+[submodule "Sophus"]
+	path = Sophus
+	url = https://github.com/strasdat/Sophus.git
+[submodule "eigen"]
+	path = eigen
+	url = https://github.com/libigl/eigen.git

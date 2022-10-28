@@ -7,8 +7,14 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_subdirectory(eigen)
 add_subdirectory(Sophus)
 
-add_executable(test lie_theory.cpp)
-target_link_libraries(test
+add_executable(derivation_of_rotation_matrix derivation_of_rotation_matrix.cpp)
+target_link_libraries(derivation_of_rotation_matrix
+    eigen
+    sophus
+)
+
+add_executable(derivation_of_quaternion derivation_of_quaternion.cpp)
+target_link_libraries(derivation_of_quaternion
     eigen
     sophus
 )
